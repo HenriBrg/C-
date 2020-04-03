@@ -1,21 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Contact.cpp                                        :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/02 19:11:47 by henri             #+#    #+#             */
-/*   Updated: 2020/04/03 00:44:48 by henri            ###   ########.fr       */
+/*   Created: 2020/04/03 22:12:11 by henri             #+#    #+#             */
+/*   Updated: 2020/04/04 00:54:15 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "Contact.hpp"
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
 
-void 	Contact::newContact(int index)
-{
-	std::cout << "New Contact" << std::endl;
-	std::cout << index << std::endl;
+# include <iostream>
+# include <string>
 
-	return ;
-}
+class Zombie {
+
+	public:
+		Zombie(std::string const &type, std::string const &name);
+		void 	advert(void);
+		void 	announce(void);
+
+	private:
+		std::string type;
+		std::string name;
+};
+
+#endif

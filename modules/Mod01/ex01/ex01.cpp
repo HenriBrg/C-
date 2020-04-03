@@ -1,40 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook.cpp                                      :+:      :+:    :+:   */
+/*   ex01.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/02 19:57:10 by henri             #+#    #+#             */
-/*   Updated: 2020/04/03 00:43:53 by henri            ###   ########.fr       */
+/*   Created: 2020/04/03 22:03:48 by henri             #+#    #+#             */
+/*   Updated: 2020/04/03 22:11:15 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "PhoneBook.hpp"
+# include <iostream>
+# include <string>
 
 /*
-** Il y a pas un constructeur normalement ?
+** clang++ -Wall -Wextra -Werror ex01.cpp && ./a.out
 */
 
-void PhoneBook::init()
+void memoryLeak()
 {
-	index = 0;
-	contactCounter = 0;
+	std::string* panthere = new std::string("String panthere");
+	std::cout << *panthere << std::endl;
+	delete panthere;
 }
 
-void	PhoneBook::add(void)
+int main(void)
 {
-	if (contactCounter == 8)
-		std::cout << "You have reached the maximum of contacts" << std::endl;
-	else
-	{
-		this->tabContact[this->index].newContact(this->index);
-		this->contactCounter++;
-		this->index++;
-	}
-}
-
-void	PhoneBook::search()
-{
-	return ;
+	memoryLeak();
+	return (0);
 }

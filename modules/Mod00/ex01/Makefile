@@ -6,12 +6,12 @@
 #    By: henri <henri@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/02 12:13:05 by henri             #+#    #+#              #
-#    Updated: 2020/04/02 21:51:19 by henri            ###   ########.fr        #
+#    Updated: 2020/04/03 12:04:59 by henri            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = myAwesomePhoneBook
-CPP = clang++ -Wall -Wextra -Werror
+CPP = clang++ -Wall -Wextra -Werror -fsanitize=address
 SRCS = main.cpp PhoneBook.cpp Contact.cpp
 OBJS = $(SRCS:.cpp=.o)
 

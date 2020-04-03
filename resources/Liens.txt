@@ -1,9 +1,0 @@
-https://openclassrooms.com/fr/courses/1894236-programmez-avec-le-langage-c/1895634-utilisez-les-structures-de-controle
-
-https://isocpp.org/wiki/faq/c
-
-https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/le-debut-du-voyage/5176_le-c-quest-ce-que-cest/
-
-https://bruce-eckel.developpez.com/livres/cpp/traduction/ticpp2vol1/?page=preface
-
-https://cpp.developpez.com/cours/polyCpp/
