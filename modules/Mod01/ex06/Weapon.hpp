@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/04 23:29:04 by henri             #+#    #+#             */
-/*   Updated: 2020/04/05 00:26:07 by henri            ###   ########.fr       */
+/*   Updated: 2020/04/05 21:54:03 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ Ajoutez également un setType.
 class Weapon {
 	public:
 		Weapon(std::string const &type);
-		std::string const &getType(void) const;
+		const std::string  &getType(void) const;
 		void		setType(std::string const &type);
 	private:
 		std::string type;

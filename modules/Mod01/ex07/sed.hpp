@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.cpp                                         :+:      :+:    :+:   */
+/*   sed.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/04 23:03:52 by henri             #+#    #+#             */
-/*   Updated: 2020/04/05 22:08:38 by henri            ###   ########.fr       */
+/*   Created: 2020/04/06 00:05:56 by henri             #+#    #+#             */
+/*   Updated: 2020/04/06 16:20:58 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "HumanA.hpp"
+#ifndef SED_HPP
+# define SED_HPP
 
-HumanA::HumanA(std::string const &name, const Weapon &weapon):
-	name(name), weapon(weapon) {
+# include <iostream>
+# include <fstream>
+# include <sstream>
+# include <string>
 
-}
+class Sed {
+	public:
+		static void substitute(const std::string &file, const std::string &search, const std::string &replace);
+	private:
+		static std::string replace(const std::string &line, const std::string &search, const std::string &replace);
+};
 
-/*
-** Is it necessary to add const when no args are passed ?
-*/
-
-void HumanA::attack(void) // const here ? I would say yes because this would then unmodifiable
-{
-	std::cout << this->name << " attacks with his " << this->weapon.getType() << std::endl;
-}
+#endif

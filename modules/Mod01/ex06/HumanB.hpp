@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/04 22:44:42 by henri             #+#    #+#             */
-/*   Updated: 2020/04/05 00:44:09 by henri            ###   ########.fr       */
+/*   Updated: 2020/04/05 22:55:10 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,12 @@ class HumanB {
 public:
 	HumanB(std::string const &name);
 	void setWeapon(const Weapon &weapon);
-	void attack(void) const;
+	void attack(void) const; // const pour try
 
 private:
 	std::string	name;
 	const Weapon	*weapon;
+	// on le déclare en pointeur car la fonction setWeapon
 
 };
 

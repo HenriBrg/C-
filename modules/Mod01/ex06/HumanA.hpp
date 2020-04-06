@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/04 22:44:41 by henri             #+#    #+#             */
-/*   Updated: 2020/04/05 00:37:24 by henri            ###   ########.fr       */
+/*   Updated: 2020/04/05 22:07:43 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ chose comme : NAME attacks with his WEAPON_TYPE
 class HumanA {
 public:
 	HumanA(std::string const &name, const Weapon &weapon);
-	void	attack(void) const;
+	void	attack(void);
 private:
 	std::string	name;
 	const Weapon		&weapon;

@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 
+// En fait il faut assigner une valeur dans le prototype
 void display(char = '*', int = 1);
 
 int main()

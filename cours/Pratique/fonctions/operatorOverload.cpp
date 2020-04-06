@@ -1,5 +1,7 @@
 /*
 
+VOIR OPC = https://openclassrooms.com/fr/courses/1894236-programmez-avec-le-langage-c/1897891-surchargez-un-operateur#/id/r-1897836
+
 class className
 {
     ... .. ...

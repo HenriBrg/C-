@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/04 23:05:09 by henri             #+#    #+#             */
-/*   Updated: 2020/04/05 00:51:09 by henri            ###   ########.fr       */
+/*   Updated: 2020/04/05 21:46:54 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ Faites en sorte que le code suivant génère des attaques avec
 ** References are usually preferred over pointers whenever you
 ** don't need "reseating". This usually means that references are most
 ** useful in a class's public interface.
+**
+** Toujours utiliser les const, sauf si besoin de modifier
 */
 
 /*

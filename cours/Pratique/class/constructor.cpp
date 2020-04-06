@@ -13,6 +13,18 @@ Since, there are multiple constructors present, argument to the constructor shou
 
 + d'infos sur les constructor / destructor : voir module 01 : ex00
 
+2 façons d'initialiser avec le constructor
+- 1: dans la fonction constructor
+- 2: dans la liste d'initialisation (largement préférable) :
+
+	Personnage::Personnage() : m_vie(100), m_mana(100), m_nomArme("Épée rouillée"), m_degatsArme(10)
+	{
+	    //Rien à mettre dans le corps du constructeur, tout a déjà été fait !
+	}
+
+On peut surcharger un constructeur, le bon constructor sera appele en fonction
+des arguments
+
 */
 
 #include <iostream>

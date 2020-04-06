@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/04 23:03:52 by henri             #+#    #+#             */
-/*   Updated: 2020/04/05 22:08:38 by henri            ###   ########.fr       */
+/*   Created: 2020/04/06 00:06:22 by henri             #+#    #+#             */
+/*   Updated: 2020/04/06 16:34:42 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "HumanA.hpp"
+# include "sed.hpp"
 
-HumanA::HumanA(std::string const &name, const Weapon &weapon):
-	name(name), weapon(weapon) {
-
-}
-
-/*
-** Is it necessary to add const when no args are passed ?
-*/
-
-void HumanA::attack(void) // const here ? I would say yes because this would then unmodifiable
-{
-	std::cout << this->name << " attacks with his " << this->weapon.getType() << std::endl;
+int	main(int ac, char **av) {
+	if (ac != 4)
+		return (1);
+	try {
+		Sed::substitute(av[1], av[2], av[3]);
+	} catch (const char *error) {
+		std::cerr << error << std::endl;
+		return (1);
+	}
+	return (0);
 }
