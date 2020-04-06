@@ -5,20 +5,25 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/06 00:06:22 by henri             #+#    #+#             */
-/*   Updated: 2020/04/06 17:18:46 by henri            ###   ########.fr       */
+/*   Created: 2020/04/06 16:44:57 by henri             #+#    #+#             */
+/*   Updated: 2020/04/06 23:23:42 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "Sed.hpp"
+# include "Logger.hpp"
 
-int	main(int ac, char **av) {
-	if (ac != 4)
-		return (1);
+int main(void)
+{
+	Logger logger("log");
+
 	try {
-		Sed::substitute(av[1], av[2], av[3]);
+		logger.log("console", "First Log");
+		logger.log("file", "Second Log");
+		logger.log("console", "Third Log");
+		logger.log("file", "Fourth Log");
+		logger.log("console", "Fith Log");
 	} catch (const char *error) {
-		std::cerr << error << std::endl;
+		std::cerr << "Error : " << error << std::endl;
 		return (1);
 	}
 	return (0);
