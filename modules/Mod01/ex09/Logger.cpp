@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/06 17:19:23 by henri             #+#    #+#             */
-/*   Updated: 2020/04/06 23:37:28 by henri            ###   ########.fr       */
+/*   Updated: 2020/04/07 18:31:47 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void	Logger::log(std::string const &dest, std::string const &message)
 	void 	(Logger::* const actions[2])(std::string const &value) = {
 			&Logger::logToConsole, &Logger::logToFile
 	};
-	/* On définit ici un tableau de pointeur void * sur 2 fonctions qui prennent
+	/* On définit ici un tableau de pointeur sur fonction void * de type Logger sur 2 fonctions qui prennent
 	chacune un std::string */
 	if (dest == "console")
 		index = 0;

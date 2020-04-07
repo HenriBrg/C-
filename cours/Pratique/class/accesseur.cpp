@@ -1,10 +1,6 @@
 /*
 
-L'un des aspects les plus essentiels du concept « orienté objet » est l'encapsulation,
-qui consiste à définir des étiquettes pour les données membres et les fonctions membres afin
-de préciser si celles-ci sont accessibles à partir d'autres classes ou non...
-
-De cette manière, des données membres portant l'étiquette private ne peuvent pas être manipulées
+Des données membres portant l'étiquette private ne peuvent pas être manipulées
 directement par les fonctions membres des autres classes.
 
 Ainsi, pour pouvoir manipuler ces données membres, le créateur de la classe (vous en l'occurrence)

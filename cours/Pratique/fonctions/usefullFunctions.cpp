@@ -4,7 +4,9 @@ The good() method of ios class in C++ is used to check if the stream is good eno
 It means that this function will check if this stream has raised any error or not.
 */
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <sstream> // string stream
+
 using namespace std;
 
 int main()

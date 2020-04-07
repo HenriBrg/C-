@@ -1,6 +1,5 @@
 // 1)
 
-// Const data members are not assigned values during its declaration.
 // Const data members are assigned values in the constructor.
 
 // 2)
