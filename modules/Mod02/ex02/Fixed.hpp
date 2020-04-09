@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/08 16:03:08 by henri             #+#    #+#             */
-/*   Updated: 2020/04/09 00:21:04 by henri            ###   ########.fr       */
+/*   Updated: 2020/04/09 18:35:00 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,29 @@ class Fixed {
 		bool operator==(Fixed const &obj) const;
 		bool operator!=(Fixed const &obj) const;
 
+		Fixed	operator+(Fixed const &obj);
+		Fixed	operator-(Fixed const &obj);
+		Fixed	operator*(Fixed const &obj);
+		Fixed	operator/(Fixed const &obj);
+
+		/* https://www.geeksforgeeks.org/increment-and-decrement-operator-overloading-in-c/ */
+
+		Fixed	operator++();
+		Fixed	operator++(int);
+		Fixed	operator--();
+		Fixed	operator--(int);
+
+		static const Fixed	&min(Fixed const &a, Fixed const &b);
+		static		 Fixed	&min(Fixed &a, Fixed &b);
+		static const Fixed	&max(Fixed const &a, Fixed const &b);
+		static		 Fixed	&max(Fixed &a, Fixed &b);
+
 		int		toInt(void)	const;
 		float	toFloat(void) const;
 
 	private:
 		int value;
-		static const int bits = 16;
+		static const int bits = 8;
 		/* Une variable membre statique est une variable qui existe toujours en
 		un seul exemplaire, quel que soit le nombre d'instances de la classe. */
 };
