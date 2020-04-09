@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/08 16:32:53 by henri             #+#    #+#             */
-/*   Updated: 2020/04/09 18:33:18 by henri            ###   ########.fr       */
+/*   Updated: 2020/04/09 18:54:18 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,26 +119,26 @@ Fixed	Fixed::operator-(Fixed const &obj) {
 	return (tmp);
 }
 
-Fixed Fixed::operator*(Fixed const &other)
+Fixed Fixed::operator*(Fixed const &obj)
 {
-	Fixed val(*this);
+	Fixed tmp;
 	long tmp1, tmp2;
 
 	tmp1 = ((long)this->getRawBits());
-	tmp2 = ((long)other.getRawBits());
-	val.setRawBits((tmp1 * tmp2) / (1 << Fixed::bits));
-	return (val);
+	tmp2 = ((long)obj.getRawBits());
+	tmp.setRawBits((tmp1 * tmp2) / (1 << Fixed::bits));
+	return (tmp);
 }
 
-Fixed Fixed::operator/(Fixed const &other)
+Fixed Fixed::operator/(Fixed const &obj)
 {
-	Fixed val(*this);
+	Fixed tmp;
 	long tmp1, tmp2;
 
 	tmp1 = ((long)this->getRawBits());
-	tmp2 = ((long)other.getRawBits());
-	val.setRawBits((tmp1 * (1 << Fixed::bits)) / tmp2);
-	return (val);
+	tmp2 = ((long)obj.getRawBits());
+	tmp.setRawBits((tmp1 * (1 << Fixed::bits)) / tmp2);
+	return (tmp);
 }
 
 Fixed	Fixed::operator++() {
