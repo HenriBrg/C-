@@ -1,36 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   SuperTrap.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/10 15:34:36 by henri             #+#    #+#             */
-/*   Updated: 2020/04/11 17:19:15 by henri            ###   ########.fr       */
+/*   Created: 2020/04/11 21:32:01 by henri             #+#    #+#             */
+/*   Updated: 2020/04/11 22:02:19 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAV_TRAP_HPP
-# define SCAV_TRAP_HPP
+#ifndef SUPERTRAP_HPP
+# define SUPERTRAP_HPP
 
 # include <iostream>
 # include <string>
-# include "ClapTrap.hpp"
+#include "NinjaTrap.hpp"
 
-class ScavTrap: virtual public ClapTrap {
+/* Héritage multiple : https://cpp.developpez.com/faq/cpp/?page=L-heritage#Qu-est-ce-que-l-heritage-virtuel-et-quelle-est-son-utilite */
+/* Comme NinjaTrap et FragTrap héritent virtuellement de ClapTrap,
+la classe ClapTrap (et tout ce qui va avec) n'est pas dupliquée dans SuperTrap */
 
+class SuperTrap: public NinjaTrap, public FragTrap {
 	public:
-		ScavTrap(std::string const & name);
-		ScavTrap(ScavTrap const & obj);
-		~ScavTrap();
-		ScavTrap &operator=(ScavTrap const & obj);
-
+		SuperTrap(std::string const & name);
+		SuperTrap(SuperTrap const & obj);
+		virtual ~SuperTrap();
+		SuperTrap &operator=(SuperTrap const & obj);
 		void rangedAttack(std::string const & target);
 		void meleeAttack(std::string const & target);
 
-		void challengeNewcomer(void);
 	protected:
-
 	private:
 };
 
