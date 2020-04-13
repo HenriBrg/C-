@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/11 21:32:01 by henri             #+#    #+#             */
-/*   Updated: 2020/04/11 22:02:19 by henri            ###   ########.fr       */
+/*   Updated: 2020/04/12 20:59:30 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <iostream>
 # include <string>
-#include "NinjaTrap.hpp"
+# include "NinjaTrap.hpp"
 
 /* Héritage multiple : https://cpp.developpez.com/faq/cpp/?page=L-heritage#Qu-est-ce-que-l-heritage-virtuel-et-quelle-est-son-utilite */
 /* Comme NinjaTrap et FragTrap héritent virtuellement de ClapTrap,
