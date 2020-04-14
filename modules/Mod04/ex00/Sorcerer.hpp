@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/13 18:55:03 by henri             #+#    #+#             */
-/*   Updated: 2020/04/14 00:29:12 by henri            ###   ########.fr       */
+/*   Updated: 2020/04/14 15:43:18 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <iostream>
 # include <string>
+# include "Victim.hpp"
 
 class Sorcerer
 {
@@ -23,9 +24,16 @@ class Sorcerer
 		Sorcerer(const Sorcerer & source);
 		virtual ~Sorcerer();
 		Sorcerer &operator=(const Sorcerer & source);
+		std::string const & getName(void) const;
+		std::string const & getTitle(void) const;
+		void polymorph(Victim const &victim) const;
 	protected:
 	private:
+		std::string name;
+		std::string title;
 		Sorcerer(); /* We dont want to build a Sorcerer without args */
 };
+
+std::ostream &operator<<(std::ostream & out, Sorcerer const & s);
 
 # endif

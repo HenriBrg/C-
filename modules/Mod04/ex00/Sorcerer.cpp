@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/13 18:55:03 by henri             #+#    #+#             */
-/*   Updated: 2020/04/14 00:33:36 by henri            ###   ########.fr       */
+/*   Updated: 2020/04/14 15:41:04 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,29 @@ Sorcerer::~Sorcerer() {
 /* OVERLOADS */
 
 Sorcerer & Sorcerer::operator=(Sorcerer const & source) {
-	this->name = other.name;
-	this->title = other.title;
+	this->name = source.name;
+	this->title = source.title;
 	return (*this);
+}
+
+std::ostream &operator<<(std::ostream & out, Sorcerer const & s) {
+	out << "I am " << s.getName() << ", the " << s.getTitle() << ", and I like ponies !" << std::endl;
+	return (out);
+}
+
+/* GETTERS */
+
+std::string const & Sorcerer::getName(void) const {
+	return (this->name);
+}
+
+std::string const & Sorcerer::getTitle(void) const {
+	return (this->title);
 }
 
 /* CORE CLASS FUNCTIONS */
 
-std::ostream &operator<<(std::ostream & out, Sorcerer const & obj) {
-	out << "I am " << obj.name << ", the " << obj.title << " Magnificent, and I like ponies !";
-	return (out);
+void Sorcerer::polymorph(Victim const &victim) const
+{
+	victim.getPolymorphed();
 }
