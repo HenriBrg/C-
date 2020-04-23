@@ -6,11 +6,11 @@
 #    By: henri <henri@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/20 22:58:15 by henri             #+#    #+#              #
-#    Updated: 2020/04/23 16:28:40 by henri            ###   ########.fr        #
+#    Updated: 2020/04/23 18:11:56 by henri            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = serial
+NAME = wh
 
 CPP = clang++ -Wall -Wextra -Werror
 
@@ -25,7 +25,7 @@ $(NAME): $(OBJS)
 	@$(CPP) $(OBJS) -o $(NAME)
 
 x:	$(NAME)
-	@./serial
+	@./wh
 
 fclean:
 	rm -f $(NAME)
