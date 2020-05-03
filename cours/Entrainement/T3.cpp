@@ -1,4 +1,4 @@
-/* TEST 2 TAGS : TEMPLATE avec FONCTEUR - FONCTEUR PAR DEFAUT */
+/* TEST 2 TAGS : TEMPLATE avec FONCTEUR PAR DEFAUT */
 
 
 # include <iostream>
