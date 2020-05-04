@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/26 18:44:23 by henri             #+#    #+#             */
-/*   Updated: 2020/04/26 23:34:22 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/02 22:48:03 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,10 @@ class MutantStack: public std::stack<T>
 		MutantStack(MutantStack const & source): std::stack<T>(source) {}
 		/* On utilisera la surcharge de = la classe stack<T> */
 		using std::stack<T>::operator=;
+
 		/* https://docs.microsoft.com/fr-fr/cpp/cpp/aliases-and-typedefs-cpp?view=vs-2019 */
 		/* https://docs.microsoft.com/fr-fr/cpp/standard-library/stack-class?view=vs-2019 */
+		/* Un typename d'iterator ne sera valable que dans un template ! */
 		typedef typename std::stack<T>::container_type::iterator iterator;
 
 		iterator begin(void) {

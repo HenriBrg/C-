@@ -20,11 +20,11 @@ int main()
 /*
 
 Dans une map, les objets stockés sont en réalité despair.
-Pour chaque paire, l'attributfirstcorrespond à la clé alors quesecondest la valeur.
-Je vous ai dit au chapitre précédent que lesmaptriaient leurs éléments selon leurs clés.
+Pour chaque paire, l'attribut first correspond à la clé alors quesecondest la valeur.
+Je vous ai dit au chapitre précédent que les map triaient leurs éléments selon leurs clés.
 Nous allons maintenant pouvoir le vérifier facilement.
 
-Lamaputilise l'opérateur<de la classestringpour trier ses éléments, ce comportement est modifiable
+La map utilise l'opérateur < de la classe string pour trier ses éléments, ce comportement est modifiable
 */
 
 #include <iostream>
@@ -57,20 +57,20 @@ int main()
 
 /*
 
-La structure interne desmapest encore plus compliquée que celle deslist.
+La structure interne des map est encore plus compliquée que celle des list.
 Elles utilisent ce qu'on appelle des arbres binaires et se déplacer dans un tel
 arbre peut vite devenir un vrai casse-tête. Grâce aux itérateurs,
 ce n'est pas à vous de vous préoccuper de tout cela.
-Vous utilisez simplement les opérateurs++et--et l'itérateur saute d'élément en élément.
+Vous utilisez simplement les opérateurs ++ et -- et l'itérateur saute d'élément en élément.
 
 */
 
 /*
 L'opérateur [] permet d'accéder à un élément donné mais il a un « défaut ».
-Si l'élément n'existe pas, l'opérateur[]le crée. On ne peut pas l'utiliser pour savoir
+Si l'élément n'existe pas, l'opérateur [] le crée. On ne peut pas l'utiliser pour savoir
 si un élément donné est déjà présent dans la table ou pas.
 
-C'est pour palier ce problème que lesmapproposent une méthode find() qui renvoie un itérateur
+C'est pour palier ce problème que les map proposent une méthode find() qui renvoie un itérateur
 sur l'élément recherché. Si l'élément n'existe pas, elle renvoie simplementend()
 */
 

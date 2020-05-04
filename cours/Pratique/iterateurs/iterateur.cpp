@@ -14,9 +14,9 @@ Les iterateurs sont des pointeurs spéciaux pour se déplacer dans les conteneur
 le ferait un pointeur dans la mémoire.
 
 Tous les conteneurs possèdent une méthode begin() renvoyant un itérateur sur le premier élément contenu.
-On avance alors dans le conteneur en utilisant l'opérateur++
+On avance alors dans le conteneur en utilisant l'opérateur ++
 On ne veut pas aller en dehors du conteneur. Pour éviter cela, les conteneurs
-possèdent une méthodeend()renvoyant un itérateur sur la fin du conteneur.
+possèdent une méthode end() renvoyant un itérateur sur la fin du conteneur.
 */
 
 								////////////
@@ -25,8 +25,8 @@ possèdent une méthodeend()renvoyant un itérateur sur la fin du conteneur.
 
 Chaque conteneur possède son propre type d'itérateur mais la manière de les déclarer est toujours la même.
 Comme toujours, il faut un type et un nom.
-Il faut indiquer le type du conteneur, suivi de l'opérateur::et du motiterator.
-Par exemple, pour un itérateur sur unvectord'entiers, on a :
+Il faut indiquer le type du conteneur, suivi de l'opérateur :: et du mot iterator.
+Par exemple, pour un itérateur sur un vector d'entiers, on a :
 
 */
 
@@ -46,7 +46,7 @@ list<double>::iterator it3; 	//Un itérateur sur une liste de nombres à virgule
 								////////////
 
 /*
-Pour lesvectoret lesdeque, cela peut vous sembler inutile : on peut faire aussi bien avec les crochets[].
+Pour les vector et les deque, cela peut vous sembler inutile : on peut faire aussi bien avec les crochets[].
 Mais pour lesmapet surtout les list,
 ce n'est pas vrai : les itérateurs sont le seul moyen que nous avons de les parcourir.
 */

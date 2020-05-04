@@ -1,7 +1,7 @@
 /*
 
 Il existe en réalité cinq sortes d'itérateurs.
-Lorsque l'on déclare unvector::iterator ou un map::iterator, on déclare en réalité un objet d'une de ces cinq catégories.
+Lorsque l'on déclare un vector::iterator ou un map::iterator, on déclare en réalité un objet d'une de ces cinq catégories.
 Cela intervient via une redéfinition de type, chose que nous verrons dans la cinquième partie de ce cours.
 Parmi les cinq types d'itérateurs, seuls deux sont utilisés pour les conteneurs :
 	les bidirectional iterators
@@ -14,10 +14,10 @@ Parmi les cinq types d'itérateurs, seuls deux sont utilisés pour les conteneur
 Les bidirectional iterators
 
 Ce sont des itérateurs qui permettent d'avancer et de reculer sur le conteneur.
-Cela veut dire que vous pouvez utiliser aussi bien++que--.
+Cela veut dire que vous pouvez utiliser aussi bien ++ que --.
 L'important étant que l'on ne peut avancer que d'un seul élément à la fois.
 Donc pour accéder au sixième élément d'un conteneur, il faut partir de la
-position begin()puis appeler cinq fois l'opérateur++.
+position begin() puis appeler cinq fois l'opérateur ++.
 
 */
 

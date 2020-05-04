@@ -9,6 +9,7 @@ using namespace std;
 
 TAGS : Iterateur sur stream - Peut être utile pour parser un fichier
 	   Algorithme COPY() avec itérateur sur i/o stream
+	   STL : standard template library
 
 */
 
