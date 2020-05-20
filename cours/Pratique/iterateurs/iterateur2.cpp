@@ -7,7 +7,7 @@ Il faut indiquer où l'on souhaite insérer l'élément. Et cela, c'est justemen
 L'opérateur[] permet d'accéder à un élément donné mais il a un « défaut ».
 Si l'élément n'existe pas, l'opérateur [] le crée
 C'est pour palier ce problème que les map proposent une méthode find() qui renvoie un itérateur sur l'élément recherché.
-Si l'élément n'existe pas, elle renvoie simplementend()
+Si l'élément n'existe pas, elle renvoie simplement end()
 */
 
 #include <vector>
