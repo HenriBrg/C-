@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/03 19:58:58 by henri             #+#    #+#             */
-/*   Updated: 2020/04/03 21:56:15 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/23 15:13:35 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,7 @@ private:
 
 public:
 
-	/*
-	** Pas réussi à mettre le constructeur dans le fichier .cpp
-	** car age/size étaient considérées comme inutilisées
-	*/
-
-	Pony(int a, int s) {
-		age = a;
-		size = s;
-		std::cout << "Constructor" << std::endl;
-	};
+	Pony(int a, int s);
 	~Pony();
 	void run();
 	void eat();

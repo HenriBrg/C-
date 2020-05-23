@@ -6,14 +6,14 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/04 15:03:53 by henri             #+#    #+#             */
-/*   Updated: 2020/04/04 16:58:04 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/23 15:48:20 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "ZombieHorde.hpp"
 
 ZombieHorde::ZombieHorde(int n): size(n) {
-	if (size == 0)
+	if (size <= 0)
 		std::cout << "Error: size = 0" << std::endl;
 	else
 	{

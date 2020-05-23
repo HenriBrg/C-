@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/03 19:56:39 by henri             #+#    #+#             */
-/*   Updated: 2020/04/03 21:57:15 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/23 15:23:58 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ void 	ponyOnTheHeap()
 
 /*
 ** clang++ -Wall -Wextra -Werror main.cpp Pony.cpp && ./a.out
+** leaks a.out to check if pony is deleted
 */
 
 int main(void)
@@ -42,6 +43,5 @@ int main(void)
 	std::cout << std::endl << "Stack" << std::endl;
 	ponyOnTheStack();
 	std::cout << "Stack Done" << std::endl;
-	while (1);
 	return (0);
 }

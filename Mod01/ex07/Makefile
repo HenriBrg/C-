@@ -6,17 +6,19 @@
 #    By: henri <henri@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/05 23:07:16 by henri             #+#    #+#              #
-#    Updated: 2020/04/06 16:25:18 by henri            ###   ########.fr        #
+#    Updated: 2020/05/23 16:18:38 by henri            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = replace
-CPP = clang++ -Wall -Wextra -Werror -fsanitize=address
-SRCS = main.cpp sed.cpp
+CPP = clang++ -Wall -Wextra -Werror
+SRCS = main.cpp Sed.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 .cpp.o:
 	@$(CPP) -c $< -o $@
+
+all: $(NAME)
 
 $(NAME): $(OBJS)
 	@$(CPP) $(OBJS) -o $(NAME)

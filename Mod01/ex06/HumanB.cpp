@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/04 23:03:52 by henri             #+#    #+#             */
-/*   Updated: 2020/04/05 23:59:55 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/23 16:10:21 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 HumanB::HumanB(std::string const &name):
 	name(name), weapon(NULL) {
-
 }
 
 
-void HumanB::attack(void) const // const ici juste pour try
+void HumanB::attack(void) const
 {
 	if (this->weapon)
 		std::cout << this->name << " attacks with his " << this->weapon->getType() << std::endl;
@@ -34,5 +33,5 @@ void HumanB::attack(void) const // const ici juste pour try
 
 void HumanB::setWeapon(const Weapon &weapon)
 {
-	this->weapon = &weapon; // On envoie l'adresse de weapon au pointeur (voir .hpp)
+	this->weapon = &weapon;
 }
