@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/08 16:32:53 by henri             #+#    #+#             */
-/*   Updated: 2020/05/24 15:31:30 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/24 15:56:43 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,4 +88,18 @@ std::ostream &operator<<(std::ostream &out, Fixed const &value)
 {
     out << value.toFloat();
     return (out);
+}
+
+# include <iostream>
+
+int main(void) {
+	Fixed a;
+	Fixed b(a);
+	Fixed c;
+	c = b;
+
+	std::cout << a.getRawBits() << std::endl;
+	std::cout << b.getRawBits() << std::endl;
+	std::cout << c.getRawBits() << std::endl;
+	return 0;
 }
