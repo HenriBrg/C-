@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/08 16:32:53 by henri             #+#    #+#             */
-/*   Updated: 2020/05/24 15:57:04 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/24 16:03:14 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -183,22 +183,4 @@ Fixed & Fixed::max(Fixed &a, Fixed &b)
 const Fixed & Fixed::max(Fixed const &a, Fixed const &b)
 {
 	return (a > b ? a : b);
-}
-
-# include <iostream>
-
-int main(void) {
-
-	Fixed a;
-	Fixed const b(Fixed(5.05f) * Fixed(2));
-
-	std::cout << a << std::endl;
-	std::cout << ++a << std::endl;
-	std::cout << a << std::endl;
-	std::cout << a++ << std::endl;
-	std::cout << a << std::endl;
-	std::cout << b << std::endl;
-	std::cout << Fixed::max(a, b) << std::endl;
-
-	return 0;
 }
