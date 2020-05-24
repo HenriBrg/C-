@@ -6,12 +6,35 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/08 16:03:08 by henri             #+#    #+#             */
-/*   Updated: 2020/04/09 18:35:00 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/24 15:54:52 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FIXED_HPP
 # define FIXED_HPP
+
+/*
+
+# include "Fixed.hpp"
+# include <iostream>
+
+int main(void) {
+
+	Fixed a;
+	Fixed const b(Fixed(5.05f) * Fixed(2));
+
+	std::cout << a << std::endl;
+	std::cout << ++a << std::endl;
+	std::cout << a << std::endl;
+	std::cout << a++ << std::endl;
+	std::cout << a << std::endl;
+	std::cout << b << std::endl;
+	std::cout << Fixed::max(a, b) << std::endl;
+
+	return 0;
+}
+
+*/
 
 # include <iostream>
 # include <cmath>
@@ -26,7 +49,6 @@ class Fixed {
 
 		int getRawBits(void) const;
 		void setRawBits(int const raw);
-
 
 		Fixed &operator=(Fixed const &obj);
 		bool operator>(Fixed const &obj) const;
@@ -59,8 +81,6 @@ class Fixed {
 	private:
 		int value;
 		static const int bits = 8;
-		/* Une variable membre statique est une variable qui existe toujours en
-		un seul exemplaire, quel que soit le nombre d'instances de la classe. */
 };
 
 std::ostream &operator<<(std::ostream &out, Fixed const &obj);

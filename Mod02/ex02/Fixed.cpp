@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/08 16:32:53 by henri             #+#    #+#             */
-/*   Updated: 2020/04/09 18:54:18 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/24 15:50:12 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -146,7 +146,7 @@ Fixed	Fixed::operator++() {
 	return (*this);
 }
 
-Fixed	Fixed::operator++(int) { /* PREFIX */
+Fixed	Fixed::operator++(int) {
 	Fixed tmp(*this);
 
 	operator++();
@@ -158,7 +158,7 @@ Fixed	Fixed::operator--() {
 	return (*this);
 }
 
-Fixed	Fixed::operator--(int) { /* PREFIX */
+Fixed	Fixed::operator--(int) {
 	Fixed tmp(*this);
 
 	operator--();

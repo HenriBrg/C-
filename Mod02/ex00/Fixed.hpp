@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/08 16:03:08 by henri             #+#    #+#             */
-/*   Updated: 2020/04/08 18:13:17 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/24 15:11:48 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,6 @@ int main(void) {
 
 class Fixed {
 
-	/* Fixed-points tutorial : go check this :
-	    - https://stackoverflow.com/questions/10067510/fixed-point-arithmetic-in-c-programming
-	*/
 	public:
 		Fixed();
 		Fixed(Fixed const &copy);
@@ -47,9 +44,6 @@ class Fixed {
 	private:
 		int x;
 		static const int bits = 8;
-		/* Une variable membre statique est une variable qui existe toujours en
-		un seul exemplaire, quel que soit le nombre d'instances de la classe. */
-		/* Ici, à chaque appel de Fixed::bits, on aura toujours 8 */
 };
 
 #endif

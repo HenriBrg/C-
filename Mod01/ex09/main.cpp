@@ -6,11 +6,13 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/06 16:44:57 by henri             #+#    #+#             */
-/*   Updated: 2020/04/06 23:23:42 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/23 18:57:34 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "Logger.hpp"
+
+// NON PUSHÉ lors de la validation car ex07 skippé
 
 int main(void)
 {

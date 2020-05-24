@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/08 16:32:53 by henri             #+#    #+#             */
-/*   Updated: 2020/04/08 23:17:59 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/24 15:31:30 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,9 @@ Fixed::Fixed(const float value) {
 	this->value = roundf(value * (1 << Fixed::bits));
 
 
-	/* For better understanding, run this :
 	std::cout << "First : Value = " << this->value << std::endl;
 	std::cout << "Second : Value = " << ((float)this->value / (1 << Fixed::bits)) << std::endl;
 	std::cout << "Third : Value = " << (this->value  / (1 << Fixed::bits)) << std::endl;
-	*/
 }
 
 /* -- END CONSTRUCTORS -- */
