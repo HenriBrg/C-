@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/10 23:36:32 by henri             #+#    #+#             */
-/*   Updated: 2020/04/11 17:29:31 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/29 16:13:51 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 
 class ClapTrap {
 	public:
+		ClapTrap();
 		/* Les fonctions virtual sont destinées à être redéfinies dans les classes qui
 		sont héritières de celle-ci
 		C'est facultatif, sauf si la fonction virtual est PURE, elle devra être redéfinie dans les classes héritières */

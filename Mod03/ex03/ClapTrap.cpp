@@ -6,11 +6,15 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/10 23:53:35 by henri             #+#    #+#             */
-/*   Updated: 2020/04/11 17:30:20 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/29 16:13:14 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
+
+ClapTrap::ClapTrap() {
+	std::cout << "ClapTrap Default Constructor" << std::endl;
+}
 
 ClapTrap::ClapTrap(std::string const &name):
 	name(name)

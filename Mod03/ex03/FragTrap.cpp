@@ -6,11 +6,15 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/10 15:30:54 by henri             #+#    #+#             */
-/*   Updated: 2020/04/11 17:38:09 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/29 16:10:18 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "FragTrap.hpp"
+
+FragTrap::FragTrap() {
+	std::cout << "MOUAHAHAHAHA Voici la machine de mort sans pitié, mais sans rien sur elle ;(" << std::endl;
+}
 
 FragTrap::FragTrap(std::string const & name): ClapTrap(name) {
 	std::cout << "Constructor FragTrap which is child of ClapTrap" << std::endl;

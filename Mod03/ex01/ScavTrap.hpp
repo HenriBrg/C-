@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/10 15:34:36 by henri             #+#    #+#             */
-/*   Updated: 2020/04/10 21:55:58 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/29 16:00:42 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 class ScavTrap {
 
 	public:
+		ScavTrap();
 		ScavTrap(std::string const & name);
 		ScavTrap(ScavTrap const & obj);
 		~ScavTrap();

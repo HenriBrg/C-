@@ -6,16 +6,22 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/11 23:07:50 by henri             #+#    #+#             */
-/*   Updated: 2020/04/11 23:36:02 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/29 16:19:12 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "SuperTrap.hpp"
 
+SuperTrap::SuperTrap()
+{
+	std::cout << "(SuperTrap) Default Constructor" << std::endl;
+}
+
 SuperTrap::SuperTrap(std::string const & name):
 	ClapTrap(name), NinjaTrap(name), FragTrap(name)
 {
 	std::cout << "(SuperTrap) Constructor" << std::endl;
+	this->hitPoints = 1;
 	this->hitPoints = this->FragTrap::hitPoints;
 	this->maxHitPoints = this->FragTrap::maxHitPoints;
 	this->energyPoints = this->NinjaTrap::energyPoints;

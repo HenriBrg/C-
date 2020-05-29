@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/10 15:34:36 by henri             #+#    #+#             */
-/*   Updated: 2020/04/10 18:36:37 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/29 16:10:33 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 class FragTrap {
 
 	public:
+		FragTrap();
 		FragTrap(std::string const & name);
 		FragTrap(FragTrap const & obj);
 		~FragTrap();

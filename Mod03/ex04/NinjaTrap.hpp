@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/11 18:16:37 by henri             #+#    #+#             */
-/*   Updated: 2020/04/11 19:24:12 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/29 16:15:24 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 class NinjaTrap: virtual public ClapTrap {
 
 public:
+	NinjaTrap();
 	~NinjaTrap();
 	NinjaTrap(std::string const & name);
 	NinjaTrap(NinjaTrap const & obj);

@@ -6,11 +6,15 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/11 18:36:29 by henri             #+#    #+#             */
-/*   Updated: 2020/04/11 19:44:11 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/29 16:15:59 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "NinjaTrap.hpp"
+
+NinjaTrap::NinjaTrap() {
+	std::cout << "(NinjaTrap) default Constructor called" << std::endl;
+}
 
 NinjaTrap::NinjaTrap(std::string const & name): ClapTrap(name) {
 	std::cout << "(NinjaTrap) Constructor called" << std::endl;

@@ -6,11 +6,15 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/10 15:30:54 by henri             #+#    #+#             */
-/*   Updated: 2020/04/11 17:38:34 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/29 16:11:22 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "ScavTrap.hpp"
+
+ScavTrap::ScavTrap() {
+	std::cout << "ScavTrap Default Constructor" << std::endl;
+}
 
 ScavTrap::ScavTrap(std::string const & name): ClapTrap(name) {
 	std::cout << "(ScavTrap) Constructor" << std::endl;

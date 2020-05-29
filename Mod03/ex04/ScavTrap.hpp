@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/10 15:34:36 by henri             #+#    #+#             */
-/*   Updated: 2020/04/11 17:19:15 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/29 16:11:35 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 class ScavTrap: virtual public ClapTrap {
 
 	public:
+		ScavTrap();
 		ScavTrap(std::string const & name);
 		ScavTrap(ScavTrap const & obj);
 		~ScavTrap();

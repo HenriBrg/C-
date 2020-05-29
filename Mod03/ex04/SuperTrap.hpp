@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/11 21:32:01 by henri             #+#    #+#             */
-/*   Updated: 2020/04/12 20:59:30 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/29 16:17:53 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ la classe ClapTrap (et tout ce qui va avec) n'est pas dupliquée dans SuperTrap 
 
 class SuperTrap: public NinjaTrap, public FragTrap {
 	public:
+		SuperTrap();
 		SuperTrap(std::string const & name);
 		SuperTrap(SuperTrap const & obj);
 		virtual ~SuperTrap();
