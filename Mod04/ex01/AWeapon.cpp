@@ -6,15 +6,11 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 16:29:31 by henri             #+#    #+#             */
-/*   Updated: 2020/04/14 20:01:52 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 15:31:15 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "AWeapon.hpp"
-
-AWeapon::AWeapon() {
-	// std::cout << "Constructeur par défaut de la classe AWeapon" << std::endl;
-}
 
 AWeapon::AWeapon(AWeapon const & source): name(source.name), degats(source.degats), manaCost(source.manaCost) {
 	// std::cout << "Constructeur de copie de la classe AWeapon" << std::endl;

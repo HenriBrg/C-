@@ -6,11 +6,15 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 15:25:52 by henri             #+#    #+#             */
-/*   Updated: 2020/04/14 15:46:37 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 15:25:16 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "Victim.hpp"
+
+Victim::Victim() {
+	std::cout << "Some random victim called just appeared !"  << std::endl;
+}
 
 Victim::Victim(std::string const & name): name(name) {
 	std::cout << "Some random victim called " << this->name << " just appeared !"  << std::endl;

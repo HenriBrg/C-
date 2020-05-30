@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/15 16:53:25 by henri             #+#    #+#             */
-/*   Updated: 2020/04/15 18:42:10 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 16:17:40 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,16 +33,14 @@ int main() {
 
 	ISquad *sq = new Squad;
 	std::cout << "getCount() return " << sq->getCount() << std::endl;
-	std::cout << "Try to push null pointer" << std::endl;
 
-	sq->push(0);
 	sq->push(new AssaultTerminator);
 	std::cout << sq->getCount() << std::endl;
 	for (int i = 0; i < sq->getCount(); i++) {
 		sq->getUnit(i)->battleCry();
-		sq->getUnit(i)->clone()->battleCry();
 	}
 	std::cout << "Trying to get an unit which doesn't exist : address = " << sq->getUnit(100) << std::endl;
 	std::cout << "Trying to get an unit which doesn't exist : address = " << sq->getUnit(-100) << std::endl;
+	delete sq;
 	return 0;
 }

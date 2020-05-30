@@ -6,13 +6,13 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 19:47:21 by henri             #+#    #+#             */
-/*   Updated: 2020/04/14 20:05:22 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 15:42:14 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "Character.hpp"
 
-Character::Character(): name(std::string()), ap(0), weapon(NULL) {
+Character::Character(): name(std::string()), ap(40), weapon(NULL) {
 }
 
 Character::Character(std::string const &name): name(name), ap(40), weapon(NULL) {

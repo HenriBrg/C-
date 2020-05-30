@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 22:06:27 by henri             #+#    #+#             */
-/*   Updated: 2020/04/14 22:13:32 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 16:00:19 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ Elle sert de base à d'autres classes dérivées (héritées). */
 class ISquad
 {
 	public:
-		virtual ~ISquad() {};
+		virtual ~ISquad() {}
 		virtual int getCount(void) const = 0;
 		virtual ISpaceMarine *getUnit(int index) const = 0;
 		virtual int push(ISpaceMarine *unit) = 0;

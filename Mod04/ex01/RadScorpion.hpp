@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 19:37:33 by henri             #+#    #+#             */
-/*   Updated: 2020/04/14 19:46:23 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 15:41:11 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,7 @@ class RadScorpion: public Enemy
 		RadScorpion(const RadScorpion & source);
 		virtual ~RadScorpion ();
 		RadScorpion &operator=(const RadScorpion & source);
-
-		using Enemy::takeDamage;
+		void takeDamage(int damage);
 
 	protected:
 	private:

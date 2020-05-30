@@ -6,11 +6,15 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 15:57:59 by henri             #+#    #+#             */
-/*   Updated: 2020/04/14 16:11:06 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 15:24:42 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "Peon.hpp"
+
+Peon::Peon() {
+	std::cout << "Zog zog." << std::endl;
+}
 
 Peon::Peon(Peon const & source): Victim(source.name) {
 	std::cout << "Zog zog." << std::endl;

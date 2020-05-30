@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/16 18:03:11 by henri             #+#    #+#             */
-/*   Updated: 2020/04/16 19:04:54 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 16:22:42 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ MateriaSource::MateriaSource(): countMateriaTemplate(0) {
 MateriaSource::MateriaSource(MateriaSource const & source): countMateriaTemplate(0) {
 	for (int i = 0; i < source.countMateriaTemplate; i++)
 		this->learnMateria(source.backup[i]->clone());
-	// Reset ?
 }
 
 MateriaSource::~MateriaSource() {

@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 16:29:31 by henri             #+#    #+#             */
-/*   Updated: 2020/04/14 17:56:51 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 15:30:30 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 class AWeapon
 {
 	public:
-		AWeapon();
 		AWeapon(const AWeapon & source);
 		AWeapon(std::string const & name, int apcost, int damage);
 		virtual ~AWeapon ();
@@ -30,6 +29,7 @@ class AWeapon
 		/* Fonction virtuelle pure */
 		virtual void attack() const = 0;
 	protected:
+		AWeapon();
 		std::string name;
 		int degats;
 		int manaCost;

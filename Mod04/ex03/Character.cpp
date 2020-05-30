@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/16 00:24:44 by henri             #+#    #+#             */
-/*   Updated: 2020/04/16 18:40:11 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 16:23:00 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,10 @@ Character::Character(std::string const &name): name(name), countMateria(0) {
 	}
 }
 
-// Why countMateria(0) et pas source.countMateria
-
 Character::Character(Character const & source): name(source.name), countMateria(0) {
 	for (int i = 0; i < source.countMateria; i++) {
 		this->equip(source.inv[i]->clone());
 	}
-	// Need reset or not ? before / after ?
 }
 
 Character::~Character() {
@@ -41,7 +38,6 @@ Character & Character::operator=(Character const & source) {
 	for (int i = 0; i < source.countMateria; i++) {
 		this->equip(source.inv[i]->clone());
 	}
-	// Need reset or not ? before / after ?
 	return (*this);
 }
 

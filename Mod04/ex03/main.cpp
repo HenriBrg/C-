@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/16 00:05:56 by henri             #+#    #+#             */
-/*   Updated: 2020/04/16 20:57:49 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 16:24:03 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,5 @@ int main() {
 	jack->use(1, *Igor);
 	std::cout << "materia exp: " << otherRndomMateria->getXP() << std::endl;
 	std::cout << "materia exp: " << randomMateria->getXP() << std::endl;
-
 	return 0;
 }

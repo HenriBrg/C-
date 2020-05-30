@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 18:31:13 by henri             #+#    #+#             */
-/*   Updated: 2020/04/14 18:48:20 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 15:34:07 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 class Enemy
 {
 	public:
-		Enemy();
 		Enemy(const Enemy & source);
 		Enemy(int hp, std::string const & type);
 		virtual ~Enemy ();
@@ -28,6 +27,7 @@ class Enemy
 		int getHP() const;
 		 virtual void takeDamage(int);
 	protected:
+		Enemy();
 		std::string type;
 		int hp;
 	private:

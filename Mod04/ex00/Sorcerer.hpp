@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/13 18:55:03 by henri             #+#    #+#             */
-/*   Updated: 2020/04/14 15:43:18 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 15:26:35 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ class Sorcerer
 		void polymorph(Victim const &victim) const;
 	protected:
 	private:
+		Sorcerer();
 		std::string name;
 		std::string title;
-		Sorcerer(); /* We dont want to build a Sorcerer without args */
 };
 
 std::ostream &operator<<(std::ostream & out, Sorcerer const & s);

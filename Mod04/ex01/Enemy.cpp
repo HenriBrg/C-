@@ -6,15 +6,11 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 18:31:13 by henri             #+#    #+#             */
-/*   Updated: 2020/04/14 20:02:01 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 15:34:10 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "Enemy.hpp"
-
-Enemy::Enemy() {
-	// std::cout << "Constructeur par defaut de la classe Enemy" << std::endl;
-}
 
 Enemy::Enemy(int hp, std::string const &type): type(type), hp(hp) {
 	// std::cout << "Constructeur [int-string] de la classe Enemy" << std::endl;

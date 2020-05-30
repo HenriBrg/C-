@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/14 19:37:33 by henri             #+#    #+#             */
-/*   Updated: 2020/04/14 19:44:39 by henri            ###   ########.fr       */
+/*   Updated: 2020/05/30 15:41:18 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,8 @@ RadScorpion &RadScorpion::operator=(RadScorpion const &source) {
 	this->type = source.type;
 	this->hp = source.hp;
 	return (*this);
+}
+
+void RadScorpion::takeDamage(int damage) {
+	Enemy::takeDamage(damage);
 }
