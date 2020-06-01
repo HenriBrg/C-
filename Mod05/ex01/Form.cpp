@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/18 16:13:42 by henri             #+#    #+#             */
-/*   Updated: 2020/04/18 17:43:45 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/01 17:11:14 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ Form::~Form() {
 }
 
 Form & Form::operator=(Form const & source) {
-	this->name = source.name;
 	this->_signed = source._signed;
 	return (*this);
 }
@@ -49,7 +48,7 @@ const char* Form::AlreadySignedException::what() const throw() {
 }
 
 
-std::string Form::getName() const {
+std::string const Form::getName() const {
 	return (this->name);
 }
 

@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/18 00:24:36 by henri             #+#    #+#             */
-/*   Updated: 2020/04/20 18:15:38 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/01 17:46:01 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,4 @@ int main() {
 	} catch (std::exception & error) {
 		std::cout << error.what() << std::endl;
 	}
-	delete formMadeViaIntern;
-	delete anotherFormMadeViaIntern;
 }

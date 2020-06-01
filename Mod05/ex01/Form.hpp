@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/18 16:13:42 by henri             #+#    #+#             */
-/*   Updated: 2020/04/18 17:33:54 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/01 17:11:33 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ class Form
 			virtual const char *what() const throw();
 		};
 
-		std::string getName() const;
+		std::string const getName() const;
 		int getSignGrade() const;
 		int getExecGrade() const;
 		bool getSigned() const;
@@ -44,7 +44,7 @@ class Form
 	protected:
 	private:
 		Form();
-		std::string name;
+		const std::string name;
 		const int signGrade;
 		const int execGrade;
 		bool _signed;

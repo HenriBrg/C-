@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/18 00:24:36 by henri             #+#    #+#             */
-/*   Updated: 2020/04/20 00:03:27 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/01 17:20:33 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int main() {
 
 	Bureaucrat b1("Joe", 20);
 	std::cout << b1 << std::endl;
-	Form *sh = new ShrubberyCreationForm("Shurbbery");
+	Form *sh = new ShrubberyCreationForm("ShurbberyForm");
 	std::cout << *sh << std::endl;
 	try {
 		b1.signForm(*sh);
@@ -32,7 +32,7 @@ int main() {
 
 	Bureaucrat b2("Jack", 73);
 	std::cout << b2 << std::endl;
-	Form *ro = new RobotomyRequestForm("Robotomy");
+	Form *ro = new RobotomyRequestForm("RobotomyForm");
 	std::cout << *ro << std::endl;
 	try {
 		b2.signForm(*ro);
@@ -45,7 +45,7 @@ int main() {
 
 	Bureaucrat b3("Alfred", 3);
 	std::cout << b3 << std::endl;
-	Form *pr = new PresidentialPardonForm("Presidential");
+	Form *pr = new PresidentialPardonForm("PresidentialForm");
 	std::cout << *pr << std::endl;
 	try {
 		b3.signForm(*pr);

@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/16 23:11:15 by henri             #+#    #+#             */
-/*   Updated: 2020/04/18 00:29:52 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/01 17:01:00 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 Bureaucrat::Bureaucrat(std::string const name, int grade): name(name), grade(grade) {
 	if (grade < 1)
-		throw Bureaucrat::GradeTooLowException();
-	else if (grade > 150)
 		throw Bureaucrat::GradeTooHighException();
+	else if (grade > 150)
+		throw Bureaucrat::GradeTooLowException();
 }
 
 Bureaucrat::Bureaucrat(Bureaucrat const & source): name(source.name), grade(source.grade) {
