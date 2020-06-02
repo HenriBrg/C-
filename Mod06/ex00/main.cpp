@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/20 23:01:05 by henri             #+#    #+#             */
-/*   Updated: 2020/04/22 15:34:30 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/02 17:28:36 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,18 @@ int main(int ac, char const **av) {
 	for (size_t i = 0; i < s.length(); i++)
 		s[i] = std::tolower(s[i]);
 
-	if (s.compare(0, s.length(), "-inf") == 0 || s.compare(0, s.length(), "+inf") == 0 || s.compare(0, s.length(), "nan") == 0)
+	if (s.compare(0, s.length(), "-inf") == 0 || s.compare(0, s.length(), "+inf") == 0 || s.compare(0, s.length(), "inf") == 0)
 		isInf = true;
-	if (s[s.length() - 1] == 'f')
+	if (!isInf && s[s.length() - 1] == 'f')
 		s = s.substr(0, s.length() - 1);
 
 	long double 		n;
 	std::istringstream	iss(s);
 	iss >> n;
+
+	// std::cout << "1) --> " << n << std::endl;;
+	// std::cout << "2) --> " << iss << std::endl;;
+	// std::cout << "3) --> " << iss.str() << std::endl;;
 
 	//  CHAR
 	if (isinf(n) || isnan(n) || n < CHAR_MIN || n > CHAR_MAX)
@@ -45,21 +49,32 @@ int main(int ac, char const **av) {
 		std::cout << "char	: '" << static_cast<char>(n) << "'" << std::endl;
 	else
 		std::cout << "char	: Non Displayable" << std::endl;
+
 	//  INT
 	if (isinf(n) || isnan(n) || n < INT_MIN || n > INT_MAX)
 		std::cout << "int	: Impossible" << std::endl;
 	else
 		std::cout << "int	: " << static_cast<int>(n) << std::endl;
+
 	//  FLOAT
-	if ((isinf(n) || isnan(n)) && (n < FLT_MIN || n > FLT_MAX))
-			std::cout << "float	: Impossible" << std::endl;
+	if (iss.str() == "+inf")
+		std::cout << "float	: " << iss.str().substr(1, iss.str().length()) << "f" << std::endl;
+	else if (iss.str() == "-inf")
+		std::cout << "float	: " << iss.str() << "f" << std::endl;
+	else if ((isinf(n) || isnan(n)) && (n < FLT_MIN || n > FLT_MAX))
+		std::cout << "float	: Impossible" << std::endl;
 	else
-			std::cout << "float	: " << std::setprecision(1) << std::fixed << static_cast<float>(n) << "f" << std::endl;
+		std::cout << "float	: " << std::setprecision(1) << std::fixed << static_cast<float>(n) << "f" << std::endl;
+
 	// DOUBLE
-	if ((isinf(n) || isnan(n)) && (n < DBL_MIN || n > DBL_MAX))
+	if (iss.str() == "+inf")
+		std::cout << "double	: " << iss.str().substr(1, iss.str().length()) << std::endl;
+	else if (iss.str() == "-inf")
+		std::cout << "double	: " << iss.str() << std::endl;
+	else if ((isinf(n) || isnan(n)) && (n < DBL_MIN || n > DBL_MAX))
 			std::cout << "double	: Impossible" << std::endl;
 	else
-			std::cout << "double	: " << std::setprecision(1) << std::fixed << static_cast<double>(n) << std::endl;
+		std::cout << "double	: " << std::setprecision(1) << std::fixed << static_cast<double>(n) << std::endl;
 
 	return (0);
 }

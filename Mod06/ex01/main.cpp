@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/22 19:39:28 by henri             #+#    #+#             */
-/*   Updated: 2020/04/23 00:07:46 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/02 17:35:48 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,12 +59,12 @@ int main() {
 	delete d;
 
 	/* Hexadecimal view of raw */
-	// unsigned char *str = reinterpret_cast<unsigned char *>(raw);
-	// std::cout << "Raw bytes : ";
-	// for (size_t i = 0; i < 20; i++)
-	// 	std::cout << std::hex << std::showbase << +str[i] << " ";
-	// std::cout << std::endl;
-	// delete str;
+	unsigned char *str = reinterpret_cast<unsigned char *>(raw);
+	std::cout << "Raw bytes : ";
+	for (size_t i = 0; i < 20; i++)
+		std::cout << std::hex << std::showbase << +str[i] << " ";
+	std::cout << std::endl;
+	delete str;
 
 	return 0;
 }
