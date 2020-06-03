@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/25 21:51:40 by henri             #+#    #+#             */
-/*   Updated: 2020/04/25 23:21:34 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/03 19:25:54 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int main(void) {
 		}
 	}
 
-	std::deque<int> dqC; /* deque Container ^^ */
+	std::deque<int> dqC; /* deque Container */
 	for (int i = 0; i < 5; i++)
 		dqC.push_back(i);
 	std::deque<int>::iterator dqCit = easyfindBis(dqC, 1); /* Retourne un iterateur cette fois-ci, c'est mieux */

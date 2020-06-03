@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/26 18:43:54 by henri             #+#    #+#             */
-/*   Updated: 2020/04/26 23:55:50 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/04 00:05:38 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ int main(void) {
 	mstack.push(737);
 	mstack.push(0);
 
-	MutantStack<int>::iterator it = mstack.begin();
-	MutantStack<int>::iterator ite = mstack.end();
+	MutantStack<int>::itMutS it = mstack.begin();
+	MutantStack<int>::itMutS ite = mstack.end();
 	++it;
 	--it;
 	while (it != ite) {
@@ -55,5 +55,4 @@ int main(void) {
 	MutantStack <int>::size_type j;
 	j = s1.size( );
 	std::cout << "The stack length is " << j << "." << std::endl;
-
 }

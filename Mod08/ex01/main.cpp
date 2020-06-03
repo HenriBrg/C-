@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/26 16:11:50 by henri             #+#    #+#             */
-/*   Updated: 2020/04/26 18:43:01 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/03 20:03:41 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ int main(void) {
 	Span s(5);
 
 	s.addNumber(-10);
-	s.addNumber(12);
-	s.addNumber(50);
+	s.addNumber(-10);
 	s.addNumber(75);
+	s.addNumber(-110);
 	s.addNumber(110);
 	try {
 		s.addNumber(60);

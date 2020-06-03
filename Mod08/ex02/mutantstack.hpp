@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/26 18:44:23 by henri             #+#    #+#             */
-/*   Updated: 2020/05/02 22:48:03 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/04 00:05:39 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stack>
 # include <iostream>
+# include <typeinfo>
 
 /* Class Template VS Template Class */
 /* https://stackoverflow.com/questions/8810224/inheriting-from-a-template-class-in-c */
@@ -44,12 +45,12 @@ class MutantStack: public std::stack<T>
 		/* https://docs.microsoft.com/fr-fr/cpp/cpp/aliases-and-typedefs-cpp?view=vs-2019 */
 		/* https://docs.microsoft.com/fr-fr/cpp/standard-library/stack-class?view=vs-2019 */
 		/* Un typename d'iterator ne sera valable que dans un template ! */
-		typedef typename std::stack<T>::container_type::iterator iterator;
+		typedef typename std::stack<T>::container_type::iterator itMutS;
 
-		iterator begin(void) {
+		itMutS begin(void) {
 			return std::begin(std::stack<T>::c);
 		}
-		iterator end(void) {
+		itMutS end(void) {
 			return std::end(std::stack<T>::c);
 		}
 };
