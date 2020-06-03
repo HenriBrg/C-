@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/24 22:54:35 by henri             #+#    #+#             */
-/*   Updated: 2020/04/25 00:39:40 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/03 11:45:06 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,13 @@ int main(void) {
 	try {
 		e[e.size()] = 0; /* Une case au delà de la fin du tableau */
 	} catch (const std::exception & exc) {
-		std::cout << exc.what() << std::endl;
+		std::cout << exc.what() << " : " << "hors limites" << std::endl;
 	}
 
 	try {
 		e[-1] = 42; /* Une case au delà de la fin du tableau */
 	} catch (const std::exception & exc) {
-		std::cout << exc.what() << std::endl;
+		std::cout << exc.what() << " : " << "hors limites" << std::endl;
 	}
 
 	for (size_t i = 0; i < e.size(); i++)

@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/20 23:01:05 by henri             #+#    #+#             */
-/*   Updated: 2020/06/02 17:28:36 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/02 22:59:30 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,6 @@ int main(int ac, char const **av) {
 	long double 		n;
 	std::istringstream	iss(s);
 	iss >> n;
-
-	// std::cout << "1) --> " << n << std::endl;;
-	// std::cout << "2) --> " << iss << std::endl;;
-	// std::cout << "3) --> " << iss.str() << std::endl;;
 
 	//  CHAR
 	if (isinf(n) || isnan(n) || n < CHAR_MIN || n > CHAR_MAX)
@@ -75,6 +71,12 @@ int main(int ac, char const **av) {
 			std::cout << "double	: Impossible" << std::endl;
 	else
 		std::cout << "double	: " << std::setprecision(1) << std::fixed << static_cast<double>(n) << std::endl;
-
+	// int a = std::numeric_limits<int>::infinity();
+	// double b = std::numeric_limits<double>::infinity();
+	// float f = std::numeric_limits<float>::infinity();
+	//
+	// std::cout << a << std::endl;
+	// std::cout << b << std::endl;
+	// std::cout << f << std::endl;
 	return (0);
 }
