@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/26 16:12:22 by henri             #+#    #+#             */
-/*   Updated: 2020/04/26 18:29:33 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/04 10:55:07 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 # include <exception>
 # include <iostream>
 # include <string>
+# include <climits>
+# include <algorithm>
 
 class Span {
 	public:
