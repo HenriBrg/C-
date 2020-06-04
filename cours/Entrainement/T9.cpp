@@ -39,7 +39,4 @@ int main( )
 	i = s2.size( );
 	std::cout << "The stack length is " << i << "." << std::endl;
 
-	// ---------> ::C
-	std::stack<int> si;
-
 }

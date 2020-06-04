@@ -6,7 +6,7 @@
 /*   By: henri <henri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/26 18:43:54 by henri             #+#    #+#             */
-/*   Updated: 2020/06/04 00:05:38 by henri            ###   ########.fr       */
+/*   Updated: 2020/06/04 10:47:24 by henri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ int main(void) {
 	std::cout << mstack.top() << std::endl;
 	mstack.pop();
 	std::cout << mstack.size() << std::endl;
-	mstack.push(3); mstack.push(5);
+	mstack.push(3);
+	mstack.push(5);
 	mstack.push(737);
 	mstack.push(0);
 
