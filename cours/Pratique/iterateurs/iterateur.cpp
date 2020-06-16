@@ -47,8 +47,8 @@ list<double>::iterator it3; 	//Un itérateur sur une liste de nombres à virgule
 
 /*
 Pour les vector et les deque, cela peut vous sembler inutile : on peut faire aussi bien avec les crochets[].
-Mais pour lesmapet surtout les list,
-ce n'est pas vrai : les itérateurs sont le seul moyen que nous avons de les parcourir.
+Mais pour les map et surtout les list, ce n'est pas vrai :
+les itérateurs sont le seul moyen que nous avons de les parcourir.
 */
 
 #include<deque>
